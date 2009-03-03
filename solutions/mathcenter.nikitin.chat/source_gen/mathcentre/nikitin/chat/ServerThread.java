@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import swiftteams.nikitin.sql.runtime.TableRow;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import swiftteams.nikitin.sql.runtime.ArrayListCreator;
 import swiftteams.nikitin.sql.runtime.ConnectionManager;
 import java.sql.Timestamp;
@@ -41,7 +42,7 @@ public class ServerThread extends Thread {
       this.sendLine(Const.greeting);
       String param = ", ip: " + this.socket.getInetAddress().getHostAddress();
       try {
-        for(TableRow element : ArrayListCreator.create(ConnectionManager.query("SELECT   * FROM " + "" + "history" + "   " + "" + "ORDER BY" + " " + "history.timestamp"))) {
+        for(TableRow element : ListSequence.fromList(ArrayListCreator.create(ConnectionManager.query("SELECT   * FROM " + "" + "history" + "   " + "" + "ORDER BY" + " " + "history.timestamp")))) {
           this.out.println(Server.getTime(((Timestamp)element.getProperty("timestamp"))) + " " + ((String)element.getProperty("login")) + Const.separator + ((String)element.getProperty("message")));
         }
       } catch (SQLException se) {

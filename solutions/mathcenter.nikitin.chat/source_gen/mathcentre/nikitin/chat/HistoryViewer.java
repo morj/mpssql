@@ -5,6 +5,7 @@ package mathcentre.nikitin.chat;
 import java.sql.SQLException;
 import swiftteams.nikitin.sql.runtime.ConnectionManager;
 import swiftteams.nikitin.sql.runtime.TableRow;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import swiftteams.nikitin.sql.runtime.ArrayListCreator;
 import java.sql.Timestamp;
 
@@ -15,7 +16,7 @@ public class HistoryViewer {
 
   public static void main(String[] args) throws SQLException {
     ConnectionManager.setConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/chat", "Morj", "abacaba");
-    for(TableRow element : ArrayListCreator.create(ConnectionManager.query("SELECT   * FROM " + "" + "history" + "   " + "" + "ORDER BY" + " " + "history.timestamp"))) {
+    for(TableRow element : ListSequence.fromList(ArrayListCreator.create(ConnectionManager.query("SELECT   * FROM " + "" + "history" + "   " + "" + "ORDER BY" + " " + "history.timestamp")))) {
       System.out.println(Server.getTime(((Timestamp)element.getProperty("timestamp"))) + " " + ((String)element.getProperty("login")) + Const.separator + ((String)element.getProperty("message")));
     }
   }

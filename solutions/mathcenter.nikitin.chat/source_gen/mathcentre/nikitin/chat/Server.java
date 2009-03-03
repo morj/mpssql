@@ -17,8 +17,8 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server {
-  public static List<ServerThread> clients = new LinkedList<ServerThread>();
-  public static Set<String> names = new HashSet<String>();
+  private static List<ServerThread> clients = new LinkedList<ServerThread>();
+  private static Set<String> names = new HashSet<String>();
 
   public Server() {
   }
