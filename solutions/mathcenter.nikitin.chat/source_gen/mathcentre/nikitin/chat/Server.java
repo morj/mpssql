@@ -15,6 +15,7 @@ import java.sql.SQLException;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
+import swiftteams.nikitin.sql.runtime.Debug;
 
 public class Server {
   private static List<ServerThread> clients = new LinkedList<ServerThread>();
@@ -64,23 +65,32 @@ public class Server {
   }
 
   public static void main(String[] args) throws IOException, SQLException {
-    ConnectionManager.setConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/chat", "Morj", "abacaba");
-    ServerSocket serverSocket = null;
-    boolean listening = true;
     try {
-      serverSocket = new ServerSocket(Const.serverPort);
-    } catch (IOException e) {
-      System.out.println("Could not listen on port: " + Const.serverPort);
-      System.exit(-1);
+      ConnectionManager.setConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/chat", "Morj", "mrj");
+      ServerSocket serverSocket = null;
+      boolean listening = true;
+      try {
+        serverSocket = new ServerSocket(Const.serverPort);
+      } catch (IOException e) {
+        System.out.println("Could not listen on port: " + Const.serverPort);
+        System.exit(-1);
+      }
+      System.out.println("MPS Server started...");
+      while (listening) {
+        Socket incoming = serverSocket.accept();
+        ServerThread client = new ServerThread(incoming);
+        clients.add(client);
+        client.start();
+      }
+    } catch (SQLException e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        ConnectionManager.shutdown();
+      } catch (SQLException exception) {
+        Debug.debug("shutdown failed");
+      }
     }
-    System.out.println("MPS Server started...");
-    while (listening) {
-      Socket incoming = serverSocket.accept();
-      ServerThread client = new ServerThread(incoming);
-      clients.add(client);
-      client.start();
-    }
-    ConnectionManager.shutdown();
   }
 
   public static String getTime(Timestamp t) {

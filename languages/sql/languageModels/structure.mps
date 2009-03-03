@@ -493,6 +493,30 @@
     <property name="name" value="QuerySheet" />
     <property name="rootable" value="true" />
     <link role="extends" targetNodeId="2v.1133920641626" resolveInfo="BaseConcept" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1236093131043">
+      <property name="metaClass" value="aggregation" />
+      <property name="sourceCardinality" value="1" />
+      <property name="role" value="driver" />
+      <link role="target" targetNodeId="4.1068431790191" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1236093140830">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="url" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="4.1068431790191" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1236093150506">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="login" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="4.1068431790191" resolveInfo="Expression" />
+    </node>
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1236093160829">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="password" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="4.1068431790191" resolveInfo="Expression" />
+    </node>
     <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1214481178837">
       <property name="metaClass" value="aggregation" />
       <property name="role" value="queries" />
@@ -1632,23 +1656,23 @@
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1217579722083">
     <property name="package" value="queries" />
-    <property name="name" value="ConnectQuery" />
-    <link role="extends" targetNodeId="1214473339531" resolveInfo="AbstractQuery" />
+    <property name="name" value="ConnectStatement" />
+    <link role="extends" targetNodeId="4.1068580123157" resolveInfo="Statement" />
     <node role="conceptProperty" type="jetbrains.mps.lang.structure.structure.StringConceptProperty" id="1217579747161">
       <property name="value" value="CONNECT" />
       <link role="conceptPropertyDeclaration" targetNodeId="2v.1137473891462" resolveInfo="alias" />
     </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="1217580053747">
-      <property name="name" value="url" />
-      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1236090356290">
+      <property name="metaClass" value="aggregation" />
+      <property name="role" value="statements" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="4.1068580123136" resolveInfo="StatementList" />
     </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="1218195738913">
-      <property name="name" value="login" />
-      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
-    </node>
-    <node role="propertyDeclaration" type="jetbrains.mps.lang.structure.structure.PropertyDeclaration" id="1218195744711">
-      <property name="name" value="password" />
-      <link role="dataType" targetNodeId="2v.1082983041843" resolveInfo="string" />
+    <node role="linkDeclaration" type="jetbrains.mps.lang.structure.structure.LinkDeclaration" id="1236094013784">
+      <property name="metaClass" value="reference" />
+      <property name="role" value="schema" />
+      <property name="sourceCardinality" value="1" />
+      <link role="target" targetNodeId="1214481146572" resolveInfo="QuerySheet" />
     </node>
   </node>
   <node type="jetbrains.mps.lang.structure.structure.ConceptDeclaration" id="1217590063252">

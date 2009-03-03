@@ -11,6 +11,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.baseLanguage.collections.internal.query.ListOperations;
 import swiftteams.nikitin.sql.runtime.TableRowExtractor;
 import java.sql.Timestamp;
+import swiftteams.nikitin.sql.runtime.Debug;
 
 public class Logic implements ILogic {
 
@@ -105,10 +106,14 @@ public class Logic implements ILogic {
       for(TableRow user : ListSequence.fromList(logic.usersList())) {
         System.out.println("id: " + ((Integer)user.getProperty("id")) + ", login: " + ((String)user.getProperty("login")));
       }
-      ConnectionManager.shutdown();
-    } catch (SQLException se) {
-      System.out.println("test failed!");
-      se.printStackTrace();
+    } catch (SQLException e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        ConnectionManager.shutdown();
+      } catch (SQLException exception) {
+        Debug.debug("shutdown failed");
+      }
     }
   }
 

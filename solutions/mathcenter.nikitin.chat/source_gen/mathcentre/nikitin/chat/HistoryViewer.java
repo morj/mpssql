@@ -8,6 +8,7 @@ import swiftteams.nikitin.sql.runtime.TableRow;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import swiftteams.nikitin.sql.runtime.ArrayListCreator;
 import java.sql.Timestamp;
+import swiftteams.nikitin.sql.runtime.Debug;
 
 public class HistoryViewer {
 
@@ -15,9 +16,19 @@ public class HistoryViewer {
   }
 
   public static void main(String[] args) throws SQLException {
-    ConnectionManager.setConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/chat", "Morj", "abacaba");
-    for(TableRow element : ListSequence.fromList(ArrayListCreator.create(ConnectionManager.query("SELECT   * FROM " + "" + "history" + "   " + "" + "ORDER BY" + " " + "history.timestamp")))) {
-      System.out.println(Server.getTime(((Timestamp)element.getProperty("timestamp"))) + " " + ((String)element.getProperty("login")) + Const.separator + ((String)element.getProperty("message")));
+    try {
+      ConnectionManager.setConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/chat", "Morj", "mrj");
+      for(TableRow element : ListSequence.fromList(ArrayListCreator.create(ConnectionManager.query("SELECT   * FROM " + "" + "history" + "   " + "" + "ORDER BY" + " " + "history.timestamp")))) {
+        System.out.println(Server.getTime(((Timestamp)element.getProperty("timestamp"))) + " " + ((String)element.getProperty("login")) + Const.separator + ((String)element.getProperty("message")));
+      }
+    } catch (SQLException e) {
+      e.printStackTrace();
+    } finally {
+      try {
+        ConnectionManager.shutdown();
+      } catch (SQLException exception) {
+        Debug.debug("shutdown failed");
+      }
     }
   }
 

@@ -175,18 +175,6 @@ public class QueriesGenerated {
     return TransformationHelper.getParameterName(_context.getNode());
   }
 
-  public static Object propertyMacro_GetPropertyValue_1218195908903(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "url");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_1218195918085(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "login");
-  }
-
-  public static Object propertyMacro_GetPropertyValue_1218195925063(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), "password");
-  }
-
   public static Object propertyMacro_GetPropertyValue_1218198194042(final IOperationContext operationContext, final PropertyMacroContext _context) {
     if ((SLinkOperations.getTarget(_context.getNode(), "having_condition", true) != null)) {
       return " HAVING ";
@@ -420,6 +408,38 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), "order_by_clause", true);
   }
 
+  public static SNode sourceNodeQuery_1236092380003(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "schema", false), "driver", true);
+  }
+
+  public static SNode sourceNodeQuery_1236092380011(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "schema", false), "url", true);
+  }
+
+  public static SNode sourceNodeQuery_1236092380019(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "schema", false), "login", true);
+  }
+
+  public static SNode sourceNodeQuery_1236092380027(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "schema", false), "password", true);
+  }
+
+  public static SNode sourceNodeQuery_1236093363079(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "driver", true);
+  }
+
+  public static SNode sourceNodeQuery_1236093369255(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "url", true);
+  }
+
+  public static SNode sourceNodeQuery_1236093374928(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "login", true);
+  }
+
+  public static SNode sourceNodeQuery_1236093379116(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), "password", true);
+  }
+
   public static Iterable sourceNodesQuery_1217591721521(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "relational_properties", true);
   }
@@ -486,6 +506,10 @@ public class QueriesGenerated {
 
   public static Iterable sourceNodesQuery_1218199763900(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getTargets(_context.getNode(), "expressions", true);
+  }
+
+  public static Iterable sourceNodesQuery_1236092380036(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(_context.getNode(), "statements", true), "statement", true);
   }
 
 }

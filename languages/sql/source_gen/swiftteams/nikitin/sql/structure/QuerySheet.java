@@ -5,6 +5,7 @@ package swiftteams.nikitin.sql.structure;
 import jetbrains.mps.lang.core.structure.BaseConcept;
 import jetbrains.mps.lang.core.structure.INamedConcept;
 import jetbrains.mps.smodel.SNode;
+import jetbrains.mps.baseLanguage.structure.Expression;
 import java.util.Iterator;
 import java.util.List;
 import jetbrains.mps.smodel.SModel;
@@ -17,6 +18,10 @@ public class QuerySheet extends BaseConcept implements INamedConcept {
   public static final String SHORT_DESCRIPTION = "shortDescription";
   public static final String ALIAS = "alias";
   public static final String VIRTUAL_PACKAGE = "virtualPackage";
+  public static final String DRIVER = "driver";
+  public static final String URL = "url";
+  public static final String LOGIN = "login";
+  public static final String PASSWORD = "password";
   public static final String QUERIES = "queries";
 
   public QuerySheet(SNode node) {
@@ -53,6 +58,38 @@ public class QuerySheet extends BaseConcept implements INamedConcept {
 
   public void setVirtualPackage(String value) {
     this.setProperty(QuerySheet.VIRTUAL_PACKAGE, value);
+  }
+
+  public Expression getDriver() {
+    return (Expression)this.getChild(Expression.class, QuerySheet.DRIVER);
+  }
+
+  public void setDriver(Expression node) {
+    super.setChild(QuerySheet.DRIVER, node);
+  }
+
+  public Expression getUrl() {
+    return (Expression)this.getChild(Expression.class, QuerySheet.URL);
+  }
+
+  public void setUrl(Expression node) {
+    super.setChild(QuerySheet.URL, node);
+  }
+
+  public Expression getLogin() {
+    return (Expression)this.getChild(Expression.class, QuerySheet.LOGIN);
+  }
+
+  public void setLogin(Expression node) {
+    super.setChild(QuerySheet.LOGIN, node);
+  }
+
+  public Expression getPassword() {
+    return (Expression)this.getChild(Expression.class, QuerySheet.PASSWORD);
+  }
+
+  public void setPassword(Expression node) {
+    super.setChild(QuerySheet.PASSWORD, node);
   }
 
   public int getQueriesesCount() {
