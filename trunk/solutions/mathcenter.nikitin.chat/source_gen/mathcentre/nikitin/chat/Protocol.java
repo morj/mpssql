@@ -4,8 +4,8 @@ package mathcentre.nikitin.chat;
 
 
 public class Protocol {
-  public static final int WAITING = 0;
-  public static final int AUTENTIFICATED = 1;
+  private static final int WAITING = 0;
+  private static final int AUTENTIFICATED = 1;
 
   private int state = WAITING;
   private String name = null;

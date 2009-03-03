@@ -4,21 +4,23 @@
   <refactoringHistory />
   <language namespace="3dfc950c-a09a-4cd2-af77-badd0bdf2723(swiftteams.nikitin.sql)" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.ext.collections.lang)" />
+  <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <languageAspect modelUID="r:cbd85b18-af3b-440d-a166-34cbdf87bb28(swiftteams.nikitin.sql.constraints)" version="12" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)" version="83" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="0" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.ext.collections.lang.constraints)" version="6" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.ext.collections.lang.structure)" version="1" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.core.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="1" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590328(jetbrains.mps.baseLanguage.collections.constraints)" version="6" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="4" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590283(jetbrains.mps.lang.core.constraints)" version="2" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895903e4(jetbrains.mps.internal.collections.constraints)" version="2" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590334(jetbrains.mps.closures.constraints)" version="2" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.closures.structure)" version="0" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.bootstrap.helgins.constraints)" version="17" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.bootstrap.structureLanguage.constraints)" version="11" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.patterns.constraints)" version="2" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.bootstrap.smodelLanguage.structure)" version="1" />
-  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902fb(jetbrains.mps.bootstrap.smodelLanguage.constraints)" version="21" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590334(jetbrains.mps.baseLanguage.closures.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ae(jetbrains.mps.lang.typesystem.constraints)" version="17" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c8959028c(jetbrains.mps.lang.structure.constraints)" version="11" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590340(jetbrains.mps.lang.pattern.constraints)" version="2" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" version="1" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902fb(jetbrains.mps.lang.smodel.constraints)" version="21" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902db(jetbrains.mps.baseLanguage.blTypes.constraints)" version="0" />
+  <languageAspect modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" />
   <maxImportIndex value="6" />
   <import index="1" modelUID="f:java_stub#java.util(java.util@java_stub)" version="-1" />
   <import index="2" modelUID="f:java_stub#java.lang(java.lang@java_stub)" version="-1" />
@@ -514,7 +516,7 @@
                     <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1218462446745">
                       <link role="variableDeclaration" targetNodeId="1218457127088" resolveInfo="t" />
                     </node>
-                    <node role="operation" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.GetFirstOperation" id="1218462446746" />
+                    <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" id="1218462446746" />
                   </node>
                   <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218462446747">
                     <link role="column" targetNodeId="1218446636798" resolveInfo="timestamp" />
@@ -1418,8 +1420,8 @@
             </node>
             <node role="statement" type="jetbrains.mps.baseLanguage.structure.TryCatchStatement" id="1218464554827">
               <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1218464554828">
-                <node role="statement" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachStatement" id="1218464336016">
-                  <node role="variable" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariable" id="1218464336017">
+                <node role="statement" type="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" id="1218464336016">
+                  <node role="variable" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" id="1218464336017">
                     <property name="name" value="element" />
                   </node>
                   <node role="inputSequence" type="swiftteams.nikitin.sql.structure.SelectQuery" id="1218464346677">
@@ -1458,7 +1460,7 @@
                               <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1218464519976">
                                 <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1218464526611">
                                   <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218464530479">
-                                    <node role="operand" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariableReference" id="1218464529178">
+                                    <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1218464529178">
                                       <link role="variable" targetNodeId="1218464336017" resolveInfo="element" />
                                     </node>
                                     <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218464533062">
@@ -1471,7 +1473,7 @@
                                   </node>
                                 </node>
                                 <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218464515796">
-                                  <node role="operand" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariableReference" id="1218464515293">
+                                  <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1218464515293">
                                     <link role="variable" targetNodeId="1218464336017" resolveInfo="element" />
                                   </node>
                                   <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218464518004">
@@ -1487,7 +1489,7 @@
                               <link role="classConcept" targetNodeId="1218448780454" resolveInfo="Server" />
                               <link role="baseMethodDeclaration" targetNodeId="1218463833618" resolveInfo="getTime" />
                               <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218464503053">
-                                <node role="operand" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariableReference" id="1218464502630">
+                                <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1218464502630">
                                   <link role="variable" targetNodeId="1218464336017" resolveInfo="element" />
                                 </node>
                                 <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218464506185">
@@ -1678,8 +1680,8 @@
             <property name="password" value="abacaba" />
           </node>
         </node>
-        <node role="statement" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachStatement" id="1218463569747">
-          <node role="variable" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariable" id="1218463569748">
+        <node role="statement" type="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" id="1218463569747">
+          <node role="variable" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" id="1218463569748">
             <property name="name" value="element" />
           </node>
           <node role="inputSequence" type="swiftteams.nikitin.sql.structure.SelectQuery" id="1218463578033">
@@ -1716,7 +1718,7 @@
                       <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1218463648657">
                         <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1218463655042">
                           <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218463658003">
-                            <node role="operand" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariableReference" id="1218463657328">
+                            <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1218463657328">
                               <link role="variable" targetNodeId="1218463569748" resolveInfo="element" />
                             </node>
                             <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218463662404">
@@ -1729,7 +1731,7 @@
                           </node>
                         </node>
                         <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218463633884">
-                          <node role="operand" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariableReference" id="1218463633383">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1218463633383">
                             <link role="variable" targetNodeId="1218463569748" resolveInfo="element" />
                           </node>
                           <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218463636061">
@@ -1745,7 +1747,7 @@
                       <link role="baseMethodDeclaration" targetNodeId="1218463833618" resolveInfo="getTime" />
                       <link role="classConcept" targetNodeId="1218448780454" resolveInfo="Server" />
                       <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218463928033">
-                        <node role="operand" type="jetbrains.mps.baseLanguage.ext.collections.lang.structure.ForEachVariableReference" id="1218463927436">
+                        <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1218463927436">
                           <link role="variable" targetNodeId="1218463569748" resolveInfo="element" />
                         </node>
                         <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1218463929788">
