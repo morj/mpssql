@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project relativePaths="false" version="4">
+  <component name="BaseDirectoryProjectView">
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
+  </component>
+  <component name="BookmarkManager">
+    <option name="myBookmarkInfos">
+      <array>
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+      </array>
+    </option>
+  </component>
+  <component name="BookmarksTool">
+    <option name="myTreeState">
+      <TreeState>
+        <option name="expansion">
+          <list>
+            <option value="/" />
+          </list>
+        </option>
+      </TreeState>
+    </option>
+  </component>
+  <component name="CCaseConfig">
+    <option name="checkoutReserved" value="false" />
+    <option name="markExternalChangeAsUpToDate" value="true" />
+    <option name="checkInUseHijack" value="true" />
+    <option name="useUcmModel" value="true" />
+    <option name="isOffline" value="false" />
+    <option name="synchOutside" value="false" />
+    <option name="isHistoryResticted" value="true" />
+    <option name="useIdenticalSwitch" value="true" />
+    <option name="synchActivitiesOnRefresh" value="true" />
+    <option name="lastScr" value="" />
+    <option name="scrTextFileName" value="" />
+    <option name="historyRevisionsNumber" value="4" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" name="Default" comment="" />
+    <ignored path="Project1.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored mask=".svn*" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DefaultSearchOptionsComponent">
+    <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.FindersOptions">
+      <finders>
+        <finder class_name="jetbrains.mps.lang.structure.findUsages.NodeUsages_Finder" />
+        <finder class_name="jetbrains.mps.lang.structure.findUsages.ConceptInstances_Finder" />
+      </finders>
+    </option>
+    <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ViewOptions">
+      <flags show_one_result="true" new_tab="false" />
+    </option>
+    <option class_name="jetbrains.mps.ide.findusages.view.optionseditor.options.ScopeOptions">
+      <scope_type scope_type="project_scope" module="&lt;default&gt;" model="&lt;default&gt;" />
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileProjectViewPane">
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="MPSProjectPane">
+    <option name="state">
+      <TreeState>
+        <option name="expansion">
+          <list>
+            <option value="/" />
+          </list>
+        </option>
+        <option name="selection">
+          <list>
+            <option value="/-home-morj-Devel-SQL-solutions-swiftteams.nikitin.sql.runtime-swiftteams.nikitin.sql.runtime.msd" />
+          </list>
+        </option>
+      </TreeState>
+    </option>
+  </component>
+  <component name="MessagesViewTool">
+    <option name="errors" value="true" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectPluginManager">
+    <option name="pluginsState">
+      <option name="jetbrains.mps.baseLanguage.dates.plugin.Dates_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.baseLanguage.plugin.BaseLanguage_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.baseLanguage.stateMachine.plugin.StateMachine_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.baseLanguage.unitTest.plugin.UnitTest_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="jetbrains.mps.baseLanguage.unitTest.plugin.UnitTest_PreferencesComponent" />
+                  <params>
+                    <option name="unitTestToolDividerLocation" value="-1" />
+                    <option name="useDebug" value="false" />
+                    <option name="debugPort" value="5025" />
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+      <option name="jetbrains.mps.build.packaging.plugin.Packaging_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="jetbrains.mps.build.packaging.plugin.PackagingRunnerPreferences_PreferencesComponent" />
+                  <params>
+                    <option name="data">
+                      <map />
+                    </option>
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+      <option name="jetbrains.mps.buildlanguage.plugin.Buildlanguage_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.gtext.plugin.Gtext_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.ide.actions.Ide_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.constraints.plugin.Constraints_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.core.plugin.Core_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.dataFlow.plugin.DataFlow_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.editor.plugin.Editor_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.refactoring.plugin.Refactoring_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.script.plugin.Script_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.structure.plugin.Structure_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.test.plugin.Test_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.lang.typesystem.plugin.Typesystem_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.quickQueryLanguage.plugin.QuickQueryLanguage_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.sampleXML.plugin.SampleXML_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.uiLanguage.plugin.UiLanguage_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.webr.build.plugin.Build_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.webr.extjsInternal.plugin.ExtjsInternal_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.webr.javascriptInternal.plugin.JavascriptInternal_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.webr.wiki.precessor.lang.plugin.Lang_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.xml.deprecated.plugin.Deprecated_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mps.ypath.plugin.Ypath_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="jetbrains.mpslite.plugin.Mpslite_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="webr.javascript.plugin.Javascript_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="webr.templateLanguage.plugin.TemplateLanguage_ProjectPlugin">
+        <value>
+          <PluginState />
+        </value>
+      </option>
+      <option name="webr.webl.plugin.Webl_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="webr.webl.plugin.WebServerPreferences_PreferencesComponent" />
+                  <params>
+                    <option name="useDebug" value="true" />
+                    <option name="debugPort" value="7777" />
+                    <option name="mx" value="512" />
+                    <option name="waitForDebugger" value="false" />
+                    <option name="useProfiler" value="false" />
+                    <option name="activeOnOutput" value="false" />
+                    <option name="openBrowserOnStart" value="true" />
+                    <option name="webServerPort" value="8080" />
+                    <option name="loggers">
+                      <map />
+                    </option>
+                    <option name="confirmShutdown" value="true" />
+                    <option name="shutdownOnExit" value="true" />
+                    <option name="log4jURL" value="jetbrains/mps/webr/webServer/runtime/remote/log4j.xml" />
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+    </option>
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="0.16666667" version="1" splitterProportion="0.5">
+      <flattenPackages MPSFileSystem="false" />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <showStructure VCSRoots="false" FileSystem="false" MPSFileSystem="false" ProjectPane="false" />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="C:\Java" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="StarteamConfiguration">
+    <option name="SERVER" value="" />
+    <option name="PORT" value="49201" />
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="PROJECT" value="" />
+    <option name="VIEW" value="" />
+    <option name="ALTERNATIVE_WORKING_PATH" value="" />
+    <option name="LOCK_ON_CHECKOUT" value="false" />
+    <option name="UNLOCK_ON_CHECKIN" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="UPDATE_RUN_STATUS" value="false" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <configuration useDefault="false">D:\Documents and Settings\Morj\Application Data\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-3" y="0" width="1286" height="768" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47168058" sideWeight="0.5" order="31" side_tool="false" />
+      <window_info id="Run Packaging Language Build Script" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Web Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Supertypes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45775303" sideWeight="0.5" order="9" side_tool="false" x="26" y="426" width="1228" height="142" />
+      <window_info id="Model Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" />
+      <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="10" side_tool="false" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" />
+      <window_info id="Replacement" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Module Repository Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951945" sideWeight="0.5" order="6" side_tool="false" />
+      <window_info id="JUnitTest" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" />
+      <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="15" side_tool="false" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22292994" sideWeight="0.6109564" order="0" side_tool="false" />
+      <window_info id="Module Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951945" sideWeight="0.5" order="18" side_tool="false" />
+      <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="17" side_tool="false" />
+      <window_info id="MPS Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3825441" sideWeight="0.6130268" order="19" side_tool="false" />
+      <window_info id="Concept Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="20" side_tool="false" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28505108" sideWeight="0.38250318" order="7" side_tool="true" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="21" side_tool="false" />
+      <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="23" side_tool="false" />
+      <window_info id="RunClass" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24845679" sideWeight="0.5" order="24" side_tool="false" />
+      <window_info id="cell explorer view" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="26" side_tool="false" />
+      <window_info id="JS Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="27" side_tool="false" />
+      <window_info id="Run Build Language Project" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Class Hierarchy" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="30" side_tool="false" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Project Pane" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30781758" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Refactoring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="22" side_tool="false" />
+      <window_info id="File System" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Model Diff" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="25" side_tool="false" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
+      <window_info id="Run Class" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3923077" sideWeight="0.5" order="28" side_tool="false" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
+      <window_info id="JUnit Test" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="29" side_tool="false" />
+    </layout>
+  </component>
+  <component name="UsagesViewTool">
+    <version id="0.9994" />
+    <tabs />
+    <default_view_options>
+      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+    </default_view_options>
+  </component>
+  <component name="VCSRootsProjectView">
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="mps://swiftteams.nikitin.sql.runtime/TableRowIterator">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.runtime/TableRowExtractor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.runtime/TableRow">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.runtime/IterableResultSet">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.runtime/Debug">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.runtime/ConnectionManager">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/languages/sql/source_gen/swiftteams/nikitin/sql/structure/ValuesSingleTableInsert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/ValuesSingleTableInsert">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/InsertQuery">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/RelationalCreateQuery">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/TypeConstructorExpression">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/InlineConstraint">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/DeleteQuery">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/SubQuery">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/SelectQuery">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://swiftteams.nikitin.sql.structure/SubQueryTableExpressionClause">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.tabbedEditor.TabbedEditor$MyFileEditorState" tab="0">
+          <inner_tabs>
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+            <tab index="0" />
+          </inner_tabs>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <option name="states">
+      <map>
+        <entry key="ScopeChooserConfigurable.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl>
+                  <option name="proportions">
+                    <list>
+                      <option value="0.2" />
+                    </list>
+                  </option>
+                </SplitterProportionsDataImpl>
+              </option>
+            </UIState>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="myStates">
+      <map>
+        <entry key="ScopeChooserConfigurable.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl>
+                  <option name="proportions">
+                    <list>
+                      <option value="0.2" />
+                    </list>
+                  </option>
+                </SplitterProportionsDataImpl>
+              </option>
+            </UIState>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+
