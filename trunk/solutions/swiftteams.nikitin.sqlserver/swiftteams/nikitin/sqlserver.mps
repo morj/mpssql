@@ -7,6 +7,7 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" />
   <language namespace="5d6bee4c-f891-4a93-a0c9-e2268726ae47(jetbrains.mps.uiLanguage)" />
+  <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <languageAspect modelUID="r:cbd85b18-af3b-440d-a166-34cbdf87bb28(swiftteams.nikitin.sql.constraints)" version="12" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902c1(jetbrains.mps.baseLanguage.constraints)" version="83" />
   <languageAspect modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="1" />
@@ -1262,58 +1263,65 @@
                 </node>
               </node>
             </node>
-            <node role="statement" type="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" id="1236092986706">
-              <node role="variable" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" id="1236092986707">
-                <property name="name" value="stat" />
-              </node>
-              <node role="inputSequence" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986708">
-                <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1236092986709">
-                  <link role="variableDeclaration" targetNodeId="1236092986681" resolveInfo="logic" />
-                </node>
-                <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986710">
-                  <link role="baseMethodDeclaration" targetNodeId="1218100509159" resolveInfo="userStats" />
-                  <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="1236092986711">
-                    <property name="value" value="3" />
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1241720551927">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1241720555484">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1241720552434">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1241720551928">
+                    <link role="variableDeclaration" targetNodeId="1236092986681" resolveInfo="logic" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1241720553545">
+                    <link role="baseMethodDeclaration" targetNodeId="1218100509159" resolveInfo="userStats" />
+                    <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.IntegerConstant" id="1241720554025">
+                      <property name="value" value="3" />
+                    </node>
                   </node>
                 </node>
-              </node>
-              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1236092986712">
-                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1236092986713">
-                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986714">
-                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="1236092986715">
-                      <link role="classifier" targetNodeId="3.~System" resolveInfo="System" />
-                      <link role="variableDeclaration" targetNodeId="3.~System.out" resolveInfo="out" />
-                    </node>
-                    <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986716">
-                      <link role="baseMethodDeclaration" targetNodeId="6.~PrintStream.println(java.lang.String):void" resolveInfo="println" />
-                      <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986717">
-                        <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986718">
-                          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986719">
-                            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986720">
-                              <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986721">
-                                <link role="variable" targetNodeId="1236092986707" resolveInfo="stat" />
+                <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" id="1241720556809">
+                  <node role="closure" type="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" id="1241720556810">
+                    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1241720556811">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1236092986713">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986714">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="1236092986715">
+                            <link role="classifier" targetNodeId="3.~System" resolveInfo="System" />
+                            <link role="variableDeclaration" targetNodeId="3.~System.out" resolveInfo="out" />
+                          </node>
+                          <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986716">
+                            <link role="baseMethodDeclaration" targetNodeId="6.~PrintStream.println(java.lang.String):void" resolveInfo="println" />
+                            <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986717">
+                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986718">
+                                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986719">
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986720">
+                                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720572338">
+                                      <link role="variableDeclaration" targetNodeId="1241720556812" resolveInfo="it" />
+                                    </node>
+                                    <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986722">
+                                      <link role="column" targetNodeId="1218012718945" resolveInfo="action" />
+                                    </node>
+                                  </node>
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986723">
+                                    <property name="value" value=" - " />
+                                  </node>
+                                </node>
+                                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986724">
+                                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720568663">
+                                    <link role="variableDeclaration" targetNodeId="1241720556812" resolveInfo="it" />
+                                  </node>
+                                  <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986726">
+                                    <link role="column" targetNodeId="1218012734074" resolveInfo="timestamp" />
+                                  </node>
+                                </node>
                               </node>
-                              <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986722">
-                                <link role="column" targetNodeId="1218012718945" resolveInfo="action" />
+                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986727">
+                                <property name="value" value="on " />
                               </node>
-                            </node>
-                            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986723">
-                              <property name="value" value=" - " />
                             </node>
                           </node>
-                          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986724">
-                            <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986725">
-                              <link role="variable" targetNodeId="1236092986707" resolveInfo="stat" />
-                            </node>
-                            <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986726">
-                              <link role="column" targetNodeId="1218012734074" resolveInfo="timestamp" />
-                            </node>
-                          </node>
-                        </node>
-                        <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986727">
-                          <property name="value" value="on " />
                         </node>
                       </node>
+                    </node>
+                    <node role="parameter" type="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" id="1241720556812">
+                      <property name="name" value="stat" />
+                      <node role="type" type="jetbrains.mps.baseLanguage.structure.WildCardType" id="1241720556813" />
                     </node>
                   </node>
                 </node>
@@ -1333,72 +1341,79 @@
                 </node>
               </node>
             </node>
-            <node role="statement" type="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" id="1236092986733">
-              <node role="variable" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" id="1236092986734">
-                <property name="name" value="stat" />
-              </node>
-              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1236092986735">
-                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1236092986736">
-                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986737">
-                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="1236092986738">
-                      <link role="classifier" targetNodeId="3.~System" resolveInfo="System" />
-                      <link role="variableDeclaration" targetNodeId="3.~System.out" resolveInfo="out" />
-                    </node>
-                    <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986739">
-                      <link role="baseMethodDeclaration" targetNodeId="6.~PrintStream.println(java.lang.String):void" resolveInfo="println" />
-                      <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986740">
-                        <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986741">
-                          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986742">
-                            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986743">
-                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986744">
-                                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986745">
-                                  <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986746">
-                                    <link role="variable" targetNodeId="1236092986734" resolveInfo="stat" />
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1241720509191">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1241720514998">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1241720512303">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1241720509192">
+                    <link role="variableDeclaration" targetNodeId="1236092986681" resolveInfo="logic" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1241720513288">
+                    <link role="baseMethodDeclaration" targetNodeId="1218113570189" resolveInfo="allStats" />
+                  </node>
+                </node>
+                <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" id="1241720518279">
+                  <node role="closure" type="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" id="1241720518280">
+                    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1241720518281">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1236092986736">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986737">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="1236092986738">
+                            <link role="classifier" targetNodeId="3.~System" resolveInfo="System" />
+                            <link role="variableDeclaration" targetNodeId="3.~System.out" resolveInfo="out" />
+                          </node>
+                          <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986739">
+                            <link role="baseMethodDeclaration" targetNodeId="6.~PrintStream.println(java.lang.String):void" resolveInfo="println" />
+                            <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986740">
+                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986741">
+                                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986742">
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986743">
+                                    <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986744">
+                                      <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986745">
+                                        <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720539233">
+                                          <link role="variableDeclaration" targetNodeId="1241720518282" resolveInfo="it" />
+                                        </node>
+                                        <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986747">
+                                          <link role="column" targetNodeId="1218012718945" resolveInfo="action" />
+                                        </node>
+                                      </node>
+                                      <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986748">
+                                        <property name="value" value=" did " />
+                                      </node>
+                                    </node>
+                                    <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986749">
+                                      <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720535830">
+                                        <link role="variableDeclaration" targetNodeId="1241720518282" resolveInfo="it" />
+                                      </node>
+                                      <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986751">
+                                        <link role="column" targetNodeId="1217925271115" resolveInfo="login" />
+                                      </node>
+                                    </node>
                                   </node>
-                                  <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986747">
-                                    <link role="column" targetNodeId="1218012718945" resolveInfo="action" />
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986752">
+                                    <property name="value" value=" user " />
                                   </node>
                                 </node>
-                                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986748">
-                                  <property name="value" value=" did " />
+                                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986753">
+                                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720529940">
+                                    <link role="variableDeclaration" targetNodeId="1241720518282" resolveInfo="it" />
+                                  </node>
+                                  <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986755">
+                                    <link role="column" targetNodeId="1218012734074" resolveInfo="timestamp" />
+                                  </node>
                                 </node>
                               </node>
-                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986749">
-                                <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986750">
-                                  <link role="variable" targetNodeId="1236092986734" resolveInfo="stat" />
-                                </node>
-                                <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986751">
-                                  <link role="column" targetNodeId="1217925271115" resolveInfo="login" />
-                                </node>
+                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986756">
+                                <property name="value" value="on: " />
                               </node>
                             </node>
-                            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986752">
-                              <property name="value" value=" user " />
-                            </node>
                           </node>
-                          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986753">
-                            <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986754">
-                              <link role="variable" targetNodeId="1236092986734" resolveInfo="stat" />
-                            </node>
-                            <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986755">
-                              <link role="column" targetNodeId="1218012734074" resolveInfo="timestamp" />
-                            </node>
-                          </node>
-                        </node>
-                        <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986756">
-                          <property name="value" value="on: " />
                         </node>
                       </node>
                     </node>
+                    <node role="parameter" type="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" id="1241720518282">
+                      <property name="name" value="stat" />
+                      <node role="type" type="jetbrains.mps.baseLanguage.structure.WildCardType" id="1241720518283" />
+                    </node>
                   </node>
-                </node>
-              </node>
-              <node role="inputSequence" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986757">
-                <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1236092986758">
-                  <link role="variableDeclaration" targetNodeId="1236092986681" resolveInfo="logic" />
-                </node>
-                <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236094520956">
-                  <link role="baseMethodDeclaration" targetNodeId="1218113570189" resolveInfo="allStats" />
                 </node>
               </node>
             </node>
@@ -1443,55 +1458,62 @@
                 </node>
               </node>
             </node>
-            <node role="statement" type="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" id="1236092986776">
-              <node role="variable" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" id="1236092986777">
-                <property name="name" value="user" />
-              </node>
-              <node role="inputSequence" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986778">
-                <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1236092986779">
-                  <link role="variableDeclaration" targetNodeId="1236092986681" resolveInfo="logic" />
+            <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1241720585799">
+              <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1241720589801">
+                <node role="operand" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1241720586230">
+                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1241720585800">
+                    <link role="variableDeclaration" targetNodeId="1236092986681" resolveInfo="logic" />
+                  </node>
+                  <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1241720588327">
+                    <link role="baseMethodDeclaration" targetNodeId="1218103083776" resolveInfo="usersList" />
+                  </node>
                 </node>
-                <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986780">
-                  <link role="baseMethodDeclaration" targetNodeId="1218103083776" resolveInfo="usersList" />
-                </node>
-              </node>
-              <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1236092986781">
-                <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1236092986782">
-                  <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986783">
-                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="1236092986784">
-                      <link role="classifier" targetNodeId="3.~System" resolveInfo="System" />
-                      <link role="variableDeclaration" targetNodeId="3.~System.out" resolveInfo="out" />
-                    </node>
-                    <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986785">
-                      <link role="baseMethodDeclaration" targetNodeId="6.~PrintStream.println(java.lang.String):void" resolveInfo="println" />
-                      <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986786">
-                        <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986787">
-                          <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986788">
-                            <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986789">
-                              <link role="variable" targetNodeId="1236092986777" resolveInfo="user" />
-                            </node>
-                            <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986790">
-                              <link role="column" targetNodeId="1217925279115" resolveInfo="id" />
+                <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" id="1241720590921">
+                  <node role="closure" type="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" id="1241720590922">
+                    <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1241720590923">
+                      <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1236092986782">
+                        <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986783">
+                          <node role="operand" type="jetbrains.mps.baseLanguage.structure.StaticFieldReference" id="1236092986784">
+                            <link role="classifier" targetNodeId="3.~System" resolveInfo="System" />
+                            <link role="variableDeclaration" targetNodeId="3.~System.out" resolveInfo="out" />
+                          </node>
+                          <node role="operation" type="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" id="1236092986785">
+                            <link role="baseMethodDeclaration" targetNodeId="6.~PrintStream.println(java.lang.String):void" resolveInfo="println" />
+                            <node role="actualArgument" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986786">
+                              <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986787">
+                                <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986788">
+                                  <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720600794">
+                                    <link role="variableDeclaration" targetNodeId="1241720590924" resolveInfo="it" />
+                                  </node>
+                                  <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986790">
+                                    <link role="column" targetNodeId="1217925279115" resolveInfo="id" />
+                                  </node>
+                                </node>
+                                <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986791">
+                                  <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986792">
+                                    <node role="operand" type="jetbrains.mps.baseLanguage.structure.ParameterReference" id="1241720604248">
+                                      <link role="variableDeclaration" targetNodeId="1241720590924" resolveInfo="it" />
+                                    </node>
+                                    <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986794">
+                                      <link role="column" targetNodeId="1217925271115" resolveInfo="login" />
+                                    </node>
+                                  </node>
+                                  <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986795">
+                                    <property name="value" value=", login: " />
+                                  </node>
+                                </node>
+                              </node>
+                              <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986796">
+                                <property name="value" value="id: " />
+                              </node>
                             </node>
                           </node>
-                          <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.PlusExpression" id="1236092986791">
-                            <node role="rightExpression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1236092986792">
-                              <node role="operand" type="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" id="1236092986793">
-                                <link role="variable" targetNodeId="1236092986777" resolveInfo="user" />
-                              </node>
-                              <node role="operation" type="swiftteams.nikitin.sql.structure.TableRowsAccessOperation" id="1236092986794">
-                                <link role="column" targetNodeId="1217925271115" resolveInfo="login" />
-                              </node>
-                            </node>
-                            <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986795">
-                              <property name="value" value=", login: " />
-                            </node>
-                          </node>
-                        </node>
-                        <node role="leftExpression" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092986796">
-                          <property name="value" value="id: " />
                         </node>
                       </node>
+                    </node>
+                    <node role="parameter" type="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" id="1241720590924">
+                      <property name="name" value="user" />
+                      <node role="type" type="jetbrains.mps.baseLanguage.structure.WildCardType" id="1241720590925" />
                     </node>
                   </node>
                 </node>
@@ -1507,6 +1529,9 @@
             <link role="classifier" targetNodeId="3.~String" resolveInfo="String" />
           </node>
         </node>
+      </node>
+      <node role="throwsItem" type="jetbrains.mps.baseLanguage.structure.ClassifierType" id="1241720639037">
+        <link role="classifier" targetNodeId="8.~SQLException" resolveInfo="SQLException" />
       </node>
     </node>
     <node role="constructor" type="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" id="1218013511764">

@@ -12,7 +12,7 @@ public class ColumnRelationalProperty_Behavior {
   }
 
   public static String virtual_getPresentation_1213877396640(SNode thisNode) {
-    return SPropertyOperations.getString(SNodeOperations.getParent(thisNode), "name") + '.' + SPropertyOperations.getString(thisNode, "columnName");
+    return SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(thisNode), "swiftteams.nikitin.sql.structure.RelationalCreateQuery"), "name") + '.' + SPropertyOperations.getString(thisNode, "columnName");
   }
 
 }
