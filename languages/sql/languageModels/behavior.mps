@@ -431,5 +431,25 @@
       </node>
     </node>
   </node>
+  <node type="jetbrains.mps.lang.behavior.structure.ConceptBehavior" id="1241720794218">
+    <property name="package" value="queries" />
+    <link role="concept" targetNodeId="1.1214473339531" resolveInfo="AbstractQuery" />
+    <node role="method" type="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" id="1241720795497">
+      <property name="name" value="isLegalAsStatement" />
+      <link role="overriddenMethod" targetNodeId="6.1239211900844" resolveInfo="isLegalAsStatement" />
+      <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1241720795498" />
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1241720795500">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.ReturnStatement" id="1241720813037">
+          <node role="expression" type="jetbrains.mps.baseLanguage.structure.BooleanConstant" id="1241720814441">
+            <property name="value" value="true" />
+          </node>
+        </node>
+      </node>
+      <node role="returnType" type="jetbrains.mps.baseLanguage.structure.BooleanType" id="1241720802365" />
+    </node>
+    <node role="constructor" type="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" id="1241720794219">
+      <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1241720794220" />
+    </node>
+  </node>
 </model>
 

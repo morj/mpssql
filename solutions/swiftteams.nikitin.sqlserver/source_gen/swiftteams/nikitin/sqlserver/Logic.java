@@ -10,6 +10,7 @@ import swiftteams.nikitin.sql.runtime.ConnectionManager;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.baseLanguage.collections.internal.query.ListOperations;
 import swiftteams.nikitin.sql.runtime.TableRowExtractor;
+import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.sql.Timestamp;
 import swiftteams.nikitin.sql.runtime.Debug;
 
@@ -85,7 +86,7 @@ public class Logic implements ILogic {
   }
 
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws SQLException {
     try {
       ConnectionManager.setConnection("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/server", "Morj", "mrj");
       Logic logic = new Logic();
@@ -93,19 +94,28 @@ public class Logic implements ILogic {
       logic.logout(1);
       logic.loginTest(3);
       System.out.println("\nstats for: user1");
-      for(TableRow stat : ListSequence.fromList(logic.userStats(3))) {
-        System.out.println("on " + ((Timestamp)stat.getProperty("timestamp")) + " - " + ((String)stat.getProperty("action")));
-      }
+      ListSequence.fromList(logic.userStats(3)).visitAll(new IVisitor <TableRow>() {
+
+        public void visit(TableRow stat) {
+          System.out.println("on " + ((Timestamp)stat.getProperty("timestamp")) + " - " + ((String)stat.getProperty("action")));
+        }
+      });
       System.out.println("\nall stats:");
-      for(TableRow stat : ListSequence.fromList(logic.allStats())) {
-        System.out.println("on: " + ((Timestamp)stat.getProperty("timestamp")) + " user " + ((String)stat.getProperty("login")) + " did " + ((String)stat.getProperty("action")));
-      }
+      ListSequence.fromList(logic.allStats()).visitAll(new IVisitor <TableRow>() {
+
+        public void visit(TableRow stat) {
+          System.out.println("on: " + ((Timestamp)stat.getProperty("timestamp")) + " user " + ((String)stat.getProperty("login")) + " did " + ((String)stat.getProperty("action")));
+        }
+      });
       System.out.println("\ndelete user: 3");
       logic.deleteUser(3);
       System.out.println("\nusers list:");
-      for(TableRow user : ListSequence.fromList(logic.usersList())) {
-        System.out.println("id: " + ((Integer)user.getProperty("id")) + ", login: " + ((String)user.getProperty("login")));
-      }
+      ListSequence.fromList(logic.usersList()).visitAll(new IVisitor <TableRow>() {
+
+        public void visit(TableRow user) {
+          System.out.println("id: " + ((Integer)user.getProperty("id")) + ", login: " + ((String)user.getProperty("login")));
+        }
+      });
     } catch (SQLException e) {
       e.printStackTrace();
     } finally {
