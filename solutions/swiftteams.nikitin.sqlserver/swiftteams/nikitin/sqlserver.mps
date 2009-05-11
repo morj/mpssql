@@ -488,27 +488,27 @@
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.VoidType" id="1218013807446" />
       <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1218013807447" />
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1218013807448">
-        <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="1218193126156">
-          <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="1218193126157">
+        <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="1242053128772">
+          <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="1242053128773">
             <property name="name" value="test" />
-            <node role="type" type="swiftteams.nikitin.sql.structure.TableRows" id="1218193137678">
-              <node role="row" type="swiftteams.nikitin.sql.structure.TableRow" id="1218193137679">
-                <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1218193143557">
+            <node role="type" type="swiftteams.nikitin.sql.structure.TableRows" id="1242053128774">
+              <node role="row" type="swiftteams.nikitin.sql.structure.TableRow" id="1242053128775">
+                <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1242053128776">
                   <link role="reference" targetNodeId="1218012697981" resolveInfo="id" />
                 </node>
-                <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1218193139680">
+                <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1242053128777">
                   <link role="reference" targetNodeId="1218012718945" resolveInfo="action" />
                 </node>
               </node>
             </node>
-            <node role="initializer" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="1218193962940">
-              <node role="creator" type="swiftteams.nikitin.sql.structure.TableRowsCreator" id="1218193970798">
-                <node role="type" type="swiftteams.nikitin.sql.structure.TableRows" id="1218197522833">
-                  <node role="row" type="swiftteams.nikitin.sql.structure.TableRow" id="1218197522834">
-                    <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1218197530405">
+            <node role="initializer" type="jetbrains.mps.baseLanguage.structure.GenericNewExpression" id="1242053128778">
+              <node role="creator" type="swiftteams.nikitin.sql.structure.TableRowsCreator" id="1242053128779">
+                <node role="type" type="swiftteams.nikitin.sql.structure.TableRows" id="1242053128780">
+                  <node role="row" type="swiftteams.nikitin.sql.structure.TableRow" id="1242053128781">
+                    <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1242053128782">
                       <link role="reference" targetNodeId="1218012697981" resolveInfo="id" />
                     </node>
-                    <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1218197528243">
+                    <node role="parameters" type="swiftteams.nikitin.sql.structure.TableColumnReference" id="1242053128783">
                       <link role="reference" targetNodeId="1218012718945" resolveInfo="action" />
                     </node>
                   </node>
@@ -522,7 +522,7 @@
             <node role="statement" type="jetbrains.mps.baseLanguage.structure.ExpressionStatement" id="1218190420473">
               <node role="expression" type="jetbrains.mps.baseLanguage.structure.DotExpression" id="1218197589371">
                 <node role="operand" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1218197588839">
-                  <link role="variableDeclaration" targetNodeId="1218193126157" resolveInfo="test" />
+                  <link role="variableDeclaration" targetNodeId="1242053128773" resolveInfo="test" />
                 </node>
                 <node role="operation" type="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" id="1218197590140">
                   <node role="argument" type="swiftteams.nikitin.sql.structure.TableRowsExpression" id="1218197619925">
@@ -602,7 +602,7 @@
                     </node>
                     <node role="values" type="swiftteams.nikitin.sql.structure.TableRowsExpressionValues" id="1218184748877">
                       <node role="expression" type="jetbrains.mps.baseLanguage.structure.LocalVariableReference" id="1218194010520">
-                        <link role="variableDeclaration" targetNodeId="1218193126157" resolveInfo="test" />
+                        <link role="variableDeclaration" targetNodeId="1242053128773" resolveInfo="test" />
                       </node>
                     </node>
                   </node>
