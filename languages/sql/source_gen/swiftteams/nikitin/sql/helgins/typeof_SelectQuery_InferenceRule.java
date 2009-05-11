@@ -22,14 +22,14 @@ public class typeof_SelectQuery_InferenceRule extends AbstractInferenceRule_Runt
     {
       SNode _nodeToCheck_1029348928467 = nodeToCheck;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.getEquationManager().getRepresentator(T_typevar_1218044217413), typeCheckingContext.typeOf(SLinkOperations.getTarget(nodeToCheck, "subquery", true), "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218044234156", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218044224681", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.getEquationManager().getRepresentator(T_typevar_1218044217413), (SNode)typeCheckingContext.typeOf(SLinkOperations.getTarget(nodeToCheck, "subquery", true), "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218044234156", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218044224681", intentionProvider);
     }
     SNode tr = SModelOperations.createNewNode(SNodeOperations.getModel(nodeToCheck), "swiftteams.nikitin.sql.structure.TableRows", null);
     SLinkOperations.setTarget(tr, "row", typeCheckingContext.getEquationManager().getRepresentator(T_typevar_1218044217413), true);
     {
       SNode _nodeToCheck_1029348928467 = nodeToCheck;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.typeOf(nodeToCheck, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217410077515", true), tr, _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217410077513", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(nodeToCheck, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217410077515", true), (SNode)tr, _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217410077513", intentionProvider);
     }
   }
 

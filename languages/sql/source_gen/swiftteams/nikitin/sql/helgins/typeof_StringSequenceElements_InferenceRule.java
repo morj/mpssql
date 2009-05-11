@@ -7,6 +7,7 @@ import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 import jetbrains.mps.smodel.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import java.util.Iterator;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.BaseIntentionProvider;
 import jetbrains.mps.smodel.SModelUtil_new;
@@ -19,7 +20,7 @@ public class typeof_StringSequenceElements_InferenceRule extends AbstractInferen
   public void applyRule(final SNode nodeToCheck, final TypeCheckingContext typeCheckingContext) {
     {
       SNode expression;
-      Iterator<SNode> expression_iterator = SLinkOperations.getTargets(nodeToCheck, "strings", true).iterator();
+      Iterator<SNode> expression_iterator = ListSequence.fromList(SLinkOperations.getTargets(nodeToCheck, "strings", true)).iterator();
       while (true) {
         if (!(expression_iterator.hasNext())) {
           break;
@@ -28,7 +29,7 @@ public class typeof_StringSequenceElements_InferenceRule extends AbstractInferen
         {
           SNode _nodeToCheck_1029348928467 = nodeToCheck;
           BaseIntentionProvider intentionProvider = null;
-          typeCheckingContext.createEquation(typeCheckingContext.typeOf(expression, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217590251190", true), new _Quotations.QuotationClass_3().createNode(typeCheckingContext), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217590256755", intentionProvider);
+          typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(expression, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217590251190", true), (SNode)new _Quotations.QuotationClass_3().createNode(typeCheckingContext), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1217590256755", intentionProvider);
         }
       }
     }

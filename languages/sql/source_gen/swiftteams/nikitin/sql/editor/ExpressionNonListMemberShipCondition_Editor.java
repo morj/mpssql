@@ -137,7 +137,6 @@ public class ExpressionNonListMemberShipCondition_Editor extends DefaultNodeEdit
         {
           this.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
         }
-
       };
       inlineStyle.apply(editorCell);
     }

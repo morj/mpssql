@@ -72,7 +72,6 @@ public class TableColumnReference_Editor extends DefaultNodeEditor {
       public boolean isValidText(String text) {
         return true;
       }
-
     };
   }
 

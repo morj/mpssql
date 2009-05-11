@@ -23,13 +23,13 @@ public class typeof_CompoundSelectListExpressionItem_InferenceRule extends Abstr
     {
       SNode _nodeToCheck_1029348928467 = item;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.getEquationManager().getRepresentator(T_typevar_1218098342890), typeCheckingContext.typeOf(SLinkOperations.getTarget(item, "expr", true), "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342895", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342891", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.getEquationManager().getRepresentator(T_typevar_1218098342890), (SNode)SNodeOperations.cast(typeCheckingContext.typeOf(SLinkOperations.getTarget(item, "expr", true), "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342895", true), "swiftteams.nikitin.sql.structure.ColumnRelationalProperty"), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342891", intentionProvider);
     }
     SLinkOperations.setTarget(result, "reference", typeCheckingContext.getEquationManager().getRepresentator(T_typevar_1218098342890), false);
     {
       SNode _nodeToCheck_1029348928467 = item;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.typeOf(item, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342935", true), result, _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342931", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(item, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342935", true), (SNode)result, _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218098342931", intentionProvider);
     }
   }
 

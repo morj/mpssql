@@ -19,7 +19,7 @@ public class typeof_TableRowsCreator_InferenceRule extends AbstractInferenceRule
     {
       SNode _nodeToCheck_1029348928467 = creator;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.typeOf(creator, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218193416056", true), SLinkOperations.getTarget(creator, "type", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218193420653", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(creator, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218193416056", true), (SNode)SLinkOperations.getTarget(creator, "type", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218193420653", intentionProvider);
     }
   }
 

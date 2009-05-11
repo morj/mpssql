@@ -41,10 +41,10 @@ public class TransformationHelper {
 
   public static String getParameterName(SNode parameter) {
     if (SNodeOperations.isInstanceOf(parameter, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter")) {
-      return SPropertyOperations.getString(parameter, "variable_name");
+      return SPropertyOperations.getString(SNodeOperations.cast(parameter, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter"), "variable_name");
     }
     if (SNodeOperations.isInstanceOf(parameter, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference")) {
-      return SPropertyOperations.getString(SLinkOperations.getTarget(parameter, "reference", false), "columnName");
+      return SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(parameter, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference"), "reference", false), "columnName");
     }
     return "fail";
   }
@@ -54,18 +54,18 @@ public class TransformationHelper {
     if (SNodeOperations.isInstanceOf(right, "jetbrains.mps.baseLanguage.structure.StringLiteral")) {
       if (SNodeOperations.isInstanceOf(left, "jetbrains.mps.baseLanguage.structure.StringLiteral")) {
         result = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.StringLiteral", null);
-        SPropertyOperations.set(result, "value", SPropertyOperations.getString(left, "value") + SPropertyOperations.getString(right, "value"));
+        SPropertyOperations.set(SNodeOperations.cast(result, "jetbrains.mps.baseLanguage.structure.StringLiteral"), "value", SPropertyOperations.getString(SNodeOperations.cast(left, "jetbrains.mps.baseLanguage.structure.StringLiteral"), "value") + SPropertyOperations.getString(SNodeOperations.cast(right, "jetbrains.mps.baseLanguage.structure.StringLiteral"), "value"));
         return result;
       } else
-      if (SNodeOperations.isInstanceOf(left, "jetbrains.mps.baseLanguage.structure.PlusExpression") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(left, "rightExpression", true), "jetbrains.mps.baseLanguage.structure.StringLiteral")) {
-        SNode right_child_of_left = SLinkOperations.getTarget(left, "rightExpression", true);
-        SPropertyOperations.set(right_child_of_left, "value", SPropertyOperations.getString(right_child_of_left, "value") + SPropertyOperations.getString(right, "value"));
+      if (SNodeOperations.isInstanceOf(left, "jetbrains.mps.baseLanguage.structure.PlusExpression") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(left, "jetbrains.mps.baseLanguage.structure.PlusExpression"), "rightExpression", true), "jetbrains.mps.baseLanguage.structure.StringLiteral")) {
+        SNode right_child_of_left = SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(left, "jetbrains.mps.baseLanguage.structure.PlusExpression"), "rightExpression", true), "jetbrains.mps.baseLanguage.structure.StringLiteral");
+        SPropertyOperations.set(right_child_of_left, "value", SPropertyOperations.getString(right_child_of_left, "value") + SPropertyOperations.getString(SNodeOperations.cast(right, "jetbrains.mps.baseLanguage.structure.StringLiteral"), "value"));
         return left;
       }
     }
     result = SConceptOperations.createNewNode("jetbrains.mps.baseLanguage.structure.PlusExpression", null);
-    SLinkOperations.setTarget(result, "leftExpression", left, true);
-    SLinkOperations.setTarget(result, "rightExpression", right, true);
+    SLinkOperations.setTarget(SNodeOperations.cast(result, "jetbrains.mps.baseLanguage.structure.PlusExpression"), "leftExpression", left, true);
+    SLinkOperations.setTarget(SNodeOperations.cast(result, "jetbrains.mps.baseLanguage.structure.PlusExpression"), "rightExpression", right, true);
     return result;
   }
 

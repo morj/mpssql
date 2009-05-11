@@ -17,7 +17,7 @@ public class typeof_TableRowsExpression_InferenceRule extends AbstractInferenceR
 
   public void applyRule(final SNode expression, final TypeCheckingContext typeCheckingContext) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(expression), "jetbrains.mps.baseLanguage.collections.structure.SequenceOperation")) {
-      RulesFunctions_Collections.setInputElementType(typeCheckingContext, SNodeOperations.getParent(expression), expression);
+      RulesFunctions_Collections.setInputElementType(typeCheckingContext, SNodeOperations.cast(SNodeOperations.getParent(expression), "jetbrains.mps.baseLanguage.collections.structure.SequenceOperation"), expression);
     }
   }
 

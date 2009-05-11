@@ -157,7 +157,6 @@ public class ValuesSingleTableInsert_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.DRAW_BRACKETS, false);
         }
-
       };
       inlineStyle.apply(editorCell);
     }

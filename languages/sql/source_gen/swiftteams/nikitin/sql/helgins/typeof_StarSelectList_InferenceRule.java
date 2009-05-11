@@ -21,7 +21,7 @@ public class typeof_StarSelectList_InferenceRule extends AbstractInferenceRule_R
     {
       SNode _nodeToCheck_1029348928467 = list;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.typeOf(list, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096993980", true), typeCheckingContext.typeOf(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.getParent(list), "table_references", true)).first(), "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218097052733", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096999030", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(list, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096993980", true), (SNode)typeCheckingContext.typeOf(ListSequence.fromList(SLinkOperations.getTargets(SNodeOperations.cast(SNodeOperations.getParent(list), "swiftteams.nikitin.sql.structure.SubQuery"), "table_references", true)).first(), "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218097052733", true), _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096999030", intentionProvider);
     }
   }
 

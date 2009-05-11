@@ -70,7 +70,6 @@ public class TableReferenceSimpleExpressionData_Editor extends DefaultNodeEditor
         {
           this.set(StyleAttributes.LAYOUT_CONSTRAINT, "punctuation");
         }
-
       };
       inlineStyle.apply(editorCell);
     }
@@ -82,7 +81,6 @@ public class TableReferenceSimpleExpressionData_Editor extends DefaultNodeEditor
         {
           this.set(StyleAttributes.LAYOUT_CONSTRAINT, "punctuation");
         }
-
       };
       inlineStyle.apply(editorCell);
     }

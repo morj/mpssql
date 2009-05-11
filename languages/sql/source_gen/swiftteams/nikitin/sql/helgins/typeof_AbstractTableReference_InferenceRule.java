@@ -22,14 +22,14 @@ public class typeof_AbstractTableReference_InferenceRule extends AbstractInferen
     for(SNode property : SLinkOperations.getTargets(SLinkOperations.getTarget(reference, "table", false), "relational_properties", true)) {
       if (SNodeOperations.isInstanceOf(property, "swiftteams.nikitin.sql.structure.ColumnRelationalProperty")) {
         SNode r = SConceptOperations.createNewNode("swiftteams.nikitin.sql.structure.TableColumnReference", null);
-        SLinkOperations.setTarget(r, "reference", property, false);
+        SLinkOperations.setTarget(r, "reference", SNodeOperations.cast(property, "swiftteams.nikitin.sql.structure.ColumnRelationalProperty"), false);
         SLinkOperations.addChild(rows, "parameters", r);
       }
     }
     {
       SNode _nodeToCheck_1029348928467 = reference;
       BaseIntentionProvider intentionProvider = null;
-      typeCheckingContext.createEquation(typeCheckingContext.typeOf(reference, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096803215", true), rows, _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096808858", intentionProvider);
+      typeCheckingContext.createEquation((SNode)typeCheckingContext.typeOf(reference, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096803215", true), (SNode)rows, _nodeToCheck_1029348928467, null, "r:dbc4dda4-aa7b-4bb3-bd7a-c125ebc04391(swiftteams.nikitin.sql.helgins)", "1218096808858", intentionProvider);
     }
   }
 
