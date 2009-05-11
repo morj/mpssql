@@ -117,7 +117,6 @@ public class StringSequence_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.DRAW_BRACKETS, true);
         }
-
       };
       inlineStyle.apply(editorCell);
     }
@@ -130,7 +129,6 @@ public class StringSequence_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
         }
-
       };
       inlineStyle.apply(editorCell);
     }
@@ -147,7 +145,6 @@ public class StringSequence_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
         }
-
       };
       inlineStyle.apply(editorCell);
     }

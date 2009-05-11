@@ -115,7 +115,6 @@ public class TableRows_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.FONT_STYLE, MPSFonts.PLAIN);
         }
-
       };
       inlineStyle.apply(editorCell);
     }
@@ -128,7 +127,6 @@ public class TableRows_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
         }
-
       };
       inlineStyle.apply(editorCell);
     }
@@ -141,7 +139,6 @@ public class TableRows_Editor extends DefaultNodeEditor {
         {
           this.set(StyleAttributes.TEXT_COLOR, MPSColors.blue);
         }
-
       };
       inlineStyle.apply(editorCell);
     }

@@ -1182,21 +1182,9 @@
       <node role="returnType" type="jetbrains.mps.baseLanguage.structure.VoidType" id="1218013442833" />
       <node role="visibility" type="jetbrains.mps.baseLanguage.structure.PublicVisibility" id="1218013442834" />
       <node role="body" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1218013442835">
-        <node role="statement" type="swiftteams.nikitin.sql.structure.ConnectStatement" id="1236092981251">
+        <node role="statement" type="swiftteams.nikitin.sql.structure.ConnectStatement" id="1242050663792">
           <link role="schema" targetNodeId="1217855621880" resolveInfo="Schema" />
-          <node role="driver" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092993058">
-            <property name="value" value="com.mysql.jdbc.Driver" />
-          </node>
-          <node role="url" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236092998404">
-            <property name="value" value="jdbc:mysql://localhost:3306/server" />
-          </node>
-          <node role="login" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236093003177">
-            <property name="value" value="Morj" />
-          </node>
-          <node role="password" type="jetbrains.mps.baseLanguage.structure.StringLiteral" id="1236093007113">
-            <property name="value" value="mrj" />
-          </node>
-          <node role="statements" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1236092981256">
+          <node role="statements" type="jetbrains.mps.baseLanguage.structure.StatementList" id="1242050663793">
             <node role="statement" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" id="1236092986680">
               <node role="localVariableDeclaration" type="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" id="1236092986681">
                 <property name="name" value="logic" />

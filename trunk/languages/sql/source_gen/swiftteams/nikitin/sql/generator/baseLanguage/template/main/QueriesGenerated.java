@@ -22,7 +22,7 @@ public class QueriesGenerated {
   }
 
   public static boolean baseMappingRule_Condition_1217493036533(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
-    return SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(_context.getNode(), "lValue", true)), "jetbrains.mps.baseLanguage.structure.DotExpression") && SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "lValue", true), "operation", true)), "swiftteams.nikitin.sql.structure.TableRowsAccessOperation");
+    return SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(_context.getNode(), "lValue", true)), "jetbrains.mps.baseLanguage.structure.DotExpression") && SConceptOperations.isExactly(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "lValue", true), "jetbrains.mps.baseLanguage.structure.DotExpression"), "operation", true)), "swiftteams.nikitin.sql.structure.TableRowsAccessOperation");
   }
 
   public static boolean baseMappingRule_Condition_1217496442117(final IOperationContext operationContext, final BaseMappingRuleContext _context) {
@@ -46,11 +46,11 @@ public class QueriesGenerated {
   }
 
   public static Object propertyMacro_GetPropertyValue_1217510244048(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "operation", true), "column", false), "columnName");
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "operation", true), "swiftteams.nikitin.sql.structure.TableRowsAccessOperation"), "column", false), "columnName");
   }
 
   public static Object propertyMacro_GetPropertyValue_1217511471819(final IOperationContext operationContext, final PropertyMacroContext _context) {
-    SNode operation = SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "lValue", true), "operation", true);
+    SNode operation = SNodeOperations.cast(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "lValue", true), "jetbrains.mps.baseLanguage.structure.DotExpression"), "operation", true), "swiftteams.nikitin.sql.structure.TableRowsAccessOperation");
     return SPropertyOperations.getString(SLinkOperations.getTarget(operation, "column", false), "columnName");
   }
 
@@ -201,7 +201,7 @@ public class QueriesGenerated {
   }
 
   public static SNode sourceNodeQuery_1217505853174(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return SNodeOperations.copyNode(SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "operation", true), "column", false), "datatype", true));
+    return SNodeOperations.copyNode(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "operation", true), "swiftteams.nikitin.sql.structure.TableRowsAccessOperation"), "column", false), "datatype", true));
   }
 
   public static SNode sourceNodeQuery_1217510189319(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
@@ -209,7 +209,7 @@ public class QueriesGenerated {
   }
 
   public static SNode sourceNodeQuery_1217511468394(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), "lValue", true), "operand", true);
+    return SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), "lValue", true), "jetbrains.mps.baseLanguage.structure.DotExpression"), "operand", true);
   }
 
   public static SNode sourceNodeQuery_1217511481698(final IOperationContext operationContext, final SourceSubstituteMacroNodeContext _context) {
@@ -485,11 +485,11 @@ public class QueriesGenerated {
   }
 
   public static Iterable sourceNodesQuery_1218111964111(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(TypeChecker.getInstance().getTypeOf(_context.getNode()), "parameters", true);
+    return SLinkOperations.getTargets(SNodeOperations.cast(TypeChecker.getInstance().getTypeOf(_context.getNode()), "swiftteams.nikitin.sql.structure.TableRow"), "parameters", true);
   }
 
   public static Iterable sourceNodesQuery_1218120752440(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(TypeChecker.getInstance().getTypeOf(SLinkOperations.getTarget(_context.getNode(), "expression", true)), "parameters", true);
+    return SLinkOperations.getTargets(SNodeOperations.cast(TypeChecker.getInstance().getTypeOf(SLinkOperations.getTarget(_context.getNode(), "expression", true)), "swiftteams.nikitin.sql.structure.TableRow"), "parameters", true);
   }
 
   public static Iterable sourceNodesQuery_1218128470491(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
@@ -497,7 +497,7 @@ public class QueriesGenerated {
   }
 
   public static Iterable sourceNodesQuery_1218183903248(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {
-    return SLinkOperations.getTargets(SLinkOperations.getTarget(TypeChecker.getInstance().getTypeOf(SLinkOperations.getTarget(_context.getNode(), "expression", true)), "row", true), "parameters", true);
+    return SLinkOperations.getTargets(SLinkOperations.getTarget(SNodeOperations.cast(TypeChecker.getInstance().getTypeOf(SLinkOperations.getTarget(_context.getNode(), "expression", true)), "swiftteams.nikitin.sql.structure.TableRows"), "row", true), "parameters", true);
   }
 
   public static Iterable sourceNodesQuery_1218198154269(final IOperationContext operationContext, final SourceSubstituteMacroNodesContext _context) {

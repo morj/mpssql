@@ -18,7 +18,7 @@ public class list_extends_tablerows_SubtypingRule extends SubtypingRule_Runtime 
 
   public SNode getSubOrSuperType(SNode list) {
     SNode result = SModelOperations.createNewNode(SNodeOperations.getModel(list), "swiftteams.nikitin.sql.structure.TableRows", null);
-    SLinkOperations.setTarget(result, "row", SLinkOperations.getTarget(list, "elementType", true), true);
+    SLinkOperations.setTarget(result, "row", SNodeOperations.cast(SLinkOperations.getTarget(list, "elementType", true), "swiftteams.nikitin.sql.structure.TableRow"), true);
     return result;
   }
 

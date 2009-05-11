@@ -18,7 +18,7 @@ public class ReplacementHelper {
 
   public static String getErrorMsg(SNode tableRows1, SNode tableRows2) {
     final int count1 = SLinkOperations.getCount(tableRows1, "parameters");
-    int count2 = SLinkOperations.getCount(tableRows2, "parameters");
+    final int count2 = SLinkOperations.getCount(tableRows2, "parameters");
     if (count1 >= count2) {
       final Wrappers._T<Integer> i = new Wrappers._T<Integer>(0);
       final Wrappers._T<Integer> matches = new Wrappers._T<Integer>(0);
@@ -30,8 +30,8 @@ public class ReplacementHelper {
           while (i.value < count1) {
             i.value = i.value + 1;
             it1.value = iterator.next();
-            boolean reference_match = SNodeOperations.isInstanceOf(it1.value, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference") && SNodeOperations.isInstanceOf(it2, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(it2, "reference", false), "datatype", true), NameUtil.nodeFQName(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(SLinkOperations.getTarget(it1.value, "reference", false), "datatype", true))));
-            boolean declaration_match = SNodeOperations.isInstanceOf(it1.value, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter") && SNodeOperations.isInstanceOf(it2, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it2, "datatype", true), NameUtil.nodeFQName(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(it1.value, "datatype", true))));
+            boolean reference_match = SNodeOperations.isInstanceOf(it1.value, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference") && SNodeOperations.isInstanceOf(it2, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(it2, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference"), "reference", false), "datatype", true), NameUtil.nodeFQName(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(it1.value, "swiftteams.nikitin.sql.structure.AbstractTableColumnReference"), "reference", false), "datatype", true))));
+            boolean declaration_match = SNodeOperations.isInstanceOf(it1.value, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter") && SNodeOperations.isInstanceOf(it2, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter") && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(it2, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter"), "datatype", true), NameUtil.nodeFQName(SNodeOperations.getConceptDeclaration(SLinkOperations.getTarget(SNodeOperations.cast(it1.value, "swiftteams.nikitin.sql.structure.DeclarationTableRowParameter"), "datatype", true))));
             if (reference_match || declaration_match) {
               matches.value = matches.value + 1;
               break;
@@ -39,7 +39,6 @@ public class ReplacementHelper {
             }
           }
         }
-
       });
       if (matches.value == count2) {
         return null;
